@@ -21,6 +21,7 @@ RUN cd /tmp;                                                               \
       --enable-deflate                                                     \
       --enable-ssl                                                         \
       --enable-mime-magic                                                  \
+      --with-mpm=prefork                                                   \
       ;                                                                    \
     make && sudo make install;                                             \
     cd; rm -rf /tmp/httpd-*
